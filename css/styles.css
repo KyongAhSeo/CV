@@ -1,5 +1,5 @@
 *{
-  background-color: #111;
+  background-color: #121212;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,7 +30,7 @@ a:hover{
   color: #FFFFFFDE;
 }
 
-/* 네브바 */
+/* navbar */
 
 .navlist{
   list-style: none;
@@ -47,7 +47,7 @@ a:hover{
   opacity: 1;
 }
 
-/* 메인화면 에니메이션 */
+/* main animation */
 
 .svg-animation-container{
   width: 800px;
@@ -111,7 +111,7 @@ a:hover{
   }
 }
 
-/* title 에니메이션 */
+/* title animation */
 
 @keyframes fadeInUp {
   from {
@@ -170,7 +170,7 @@ a:hover{
   color: #FFFFFFDE;
 }
 
-/* 프로젝트 */
+/* project */
 
 .projectGroup{
   width: 450px;
@@ -192,7 +192,14 @@ a:hover{
   font-size: .875rem;
 }
 
-/* 컨택트 */
+.seeMoreLink:hover{
+  background-color: #949cdf;
+  background-image: linear-gradient(43deg,#83a95c,#a7c5eb  46%,#a7c5eb);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* contact */
 
 .contactGroup{
   width: auto;
@@ -212,10 +219,11 @@ a:hover{
 
 .formlabel{
   background-color: #1c1c1c;
+  margin-top: .5rem;
 }
 
 
-/* 반응형 */
+/* breakpoints */
 @media (max-width: 1198px){
   article{
     flex-direction: column;
