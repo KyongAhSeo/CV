@@ -369,5 +369,8 @@ a:hover{
   .skillsGroup{
     flex-wrap: wrap;
   }
+  .githubLink{
+    text-align: center;
+  }
 }
 
