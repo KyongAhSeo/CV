@@ -142,6 +142,7 @@
               백엔드 공부로 시작하였지만 직접 눈으로 보고 확인하면서 구현이 가능한 프론트엔드에 매력을 느껴 프론트엔드 분야를 선택하게 되었습니다.
               빠르게 변하는 개발 트렌드를 속에서 항상 배움의 자세를 가지고 공부를 놓지 않는 개발자가 되고 싶습니다.</p>
           </div>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </section>
         <!-- project -->
         <section class="my-6 px-5" id="projects">
@@ -238,10 +239,10 @@
               <img src="image/nodejs.svg" alt="nodejs" width="64px" height="64px">
               <p>Node.js</p>
             </div>
-            <div class="d-flex flex-column align-items-center">
+            <!-- <div class="d-flex flex-column align-items-center">
               <img src="image/react.svg" alt="react" width="64px" height="64px">
               <p>React</p>
-            </div>
+            </div> -->
             <div class="d-flex flex-column align-items-center">
               <img src="image/mongodb.svg" alt="react" width="64px" height="64px">
               <p>MongoDB</p>
@@ -312,6 +313,28 @@
       </main>
     </div>
   </div>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
