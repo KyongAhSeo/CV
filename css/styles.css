@@ -176,6 +176,7 @@ a:hover {
 }
 
 /* top button */
+
 #myBtn {
   display: none;
   position: fixed;
@@ -216,6 +217,15 @@ a:hover {
 
 .projectStack {
   font-size: 0.875rem;
+}
+
+.icon-logo {
+  width: 25px;
+}
+
+.icon-logo:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
 }
 
 .seeMoreLink:hover {
